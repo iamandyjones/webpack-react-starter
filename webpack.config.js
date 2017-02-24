@@ -14,7 +14,7 @@ var HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 
 var config = {
 	entry: {
-		javascript: APP_DIR + '/js/app.js'
+		javascript: APP_DIR + '/index.js'
 	},
 	output: {
 		path: BUILD_DIR,
