@@ -49,7 +49,7 @@
 * This dev server consults the webpack.config.js file to establish the webpack environment setup.
 * Whereas if we were to run webpack from the CLI (as above) it would write our bundle to disk, the dev server actually holds the bundle in memory, it is not emmitted to the file system.
 * Using the webpack.config.js file the dev sever already knows where the applications entry point js is, but it also needs to know which html file to serve to the browser.
-* By default it will serve the files in the current directory, or we can specify explicitly where to serve the content from using the devServer.contentBase property.
+* By default it will serve the files in the current directory, or we can specify explicitly where to serve the content from. The dev server will pick up any options set in the devServer object in the webpack config file. We can set the devServer.contentBase property to specify where content should be served from.
 * Webpack watches the source files and recompiles the bundle whenever changes are detected. 
 * Crucially, the recompiled bundle is served from memory, it is not written to the output folder as would be the case if we ran webpack itself.
 * The dev server also ships with a nice feature of automatic page refresh.
