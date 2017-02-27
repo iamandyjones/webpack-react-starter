@@ -1,4 +1,4 @@
-# webpack-starter
+# webpack-react-starter
 
 To launch the development server with auto refresh: 
 ```
